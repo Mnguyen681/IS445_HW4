@@ -14,14 +14,14 @@
     <h1>Homework 4</h1>
     <br>
     <button id = button> Load Emails XML</button>
-    <button id = button1> Load Emails FETCH</button>
+    <button id = button1> Load Usernames FETCH</button>
     <br>
     <br>
     <h3>User emails from XMLHttpRequest: </h3>
     <div id = 'emails'></div>
     <br>
     <br>
-    <h3>User Emails from Fetch</h3>
+    <h3>UserNames from Fetch</h3>
     <div id = 'output'> </div>
 
 
@@ -60,7 +60,7 @@
         let output = '<h2 class="mb-4">Users</h2>';
         data.forEach(function(user){
           output += `
-              <li class="list-group-item">Name: ${user.email}</li>
+              <li class="list-group-item">Name: ${user.username}</li>
           `;
         });
         document.getElementById('output').innerHTML = output;
